@@ -9,7 +9,7 @@ module.exports = {
       releaseYear: 1982,
       active: true,
       createdAt: new Date(),
-      updatedAt: new Date()
+      updatedAt: new Date(),
     },
     {
       title: 'Ms. Pac Man',
@@ -17,7 +17,7 @@ module.exports = {
       releaseYear: 1981,
       active: true,
       createdAt: new Date(),
-      updatedAt: new Date()
+      updatedAt: new Date(),
     },
     {
       title: 'Dig Dug',
@@ -25,7 +25,7 @@ module.exports = {
       releaseYear: 1982,
       active: false,
       createdAt: new Date(),
-      updatedAt: new Date()
+      updatedAt: new Date(),
     },
     {
       title: 'Galaga',
@@ -33,7 +33,7 @@ module.exports = {
       releaseYear: 1981,
       active: true,
       createdAt: new Date(),
-      updatedAt: new Date()
+      updatedAt: new Date(),
     }
     ], {});
   },
