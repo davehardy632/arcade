@@ -3,11 +3,12 @@ module.exports = (sequelize, DataTypes) => {
   const Game = sequelize.define('Game', {
     title: DataTypes.STRING,
     price: DataTypes.INTEGER,
+    StoreId: DataTypes.INTEGER,
     releaseYear: DataTypes.INTEGER,
-    active: DataTypes.BOOLEAN
+    active: DataTypes.BOOLEAN,
   }, {});
   Game.associate = function(models) {
-    // associations can be defined here
+    Game.belongsTo(models.Store, {foreignKey: 'StoreId', as: 'store'})
   };
   return Game;
 };

@@ -34,6 +34,7 @@ router.post("/", function(req, res, next) {
   Game.create({
           title: req.body.title,
           price: req.body.price,
+          StoreId: req.body.StoreId,
           releaseYear: req.body.releaseYear,
           active: req.body.active
     })
@@ -51,6 +52,7 @@ router.put("/:id", function(req, res, next) {
   Game.update({
           title: req.body.title,
           price: req.body.price,
+          StoreId: req.body.StoreId,
           releaseYear: req.body.releaseYear,
           active: req.body.active
     },
